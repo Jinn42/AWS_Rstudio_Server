@@ -17,7 +17,53 @@
 -Allocate a new Elastic IP address and associate it to the EC2 instance
 
 -Edit the Security Group of the EC2 instance (RStudio Server uses port 8787)
+
 ![](https://github.com/Jinn42/AWS_Rstudio_Server/blob/master/Security_Group.png)
 
 ## Connection to Rstudio Server
 
+-Go to Downloads
+
+```
+cd Downloads
+```
+
+-Look for keypair
+
+```
+ls *.pem
+```
+
+-Allow instance to access <keypair.pem>
+```
+chmod 400 (keypair.pem)
+```
+-connect to Rstudio Server
+```
+ssh -i “keypair.pem” ec2-user@<Rstusio_Server public IP>
+```
+
+## Install R and Rstudio Server 
+
+-Update the package manager
+```
+sudo yum update -y
+```
+-Install R
+```
+sudo amazon-linux-extras install R3.4
+```
+-Download and install RStudio Server (for Red Hat / CentOS 6-7)
+```
+wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-serverrhel-1.2.5019-x86_64.rpm
+```
+```
+sudo yum -y install rstudio-server-rhel-1.2.5019-x86_64.rpm
+```
+-Create user (username and password)
+```
+sudo useradd Jinn
+```
+```
+echo my_username:my_password | sudo chpasswd
+```
