@@ -38,7 +38,7 @@ ls *.pem
 ```
 chmod 400 (keypair.pem)
 ```
--connect to Rstudio Server
+-Connect to Rstudio Server
 ```
 ssh -i “keypair.pem” ec2-user@<Rstusio_Server public IP>
 ```
@@ -62,7 +62,7 @@ sudo yum -y install rstudio-server-rhel-1.2.5019-x86_64.rpm
 ```
 -Create user (username and password)
 ```
-sudo useradd Jinn
+sudo useradd my_username
 ```
 ```
 echo my_username:my_password | sudo chpasswd
