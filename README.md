@@ -18,3 +18,6 @@
 
 -Edit the Security Group of the EC2 instance (RStudio Server uses port 8787)
 ![](https://github.com/Jinn42/AWS_Rstudio_Server/blob/master/Security_Group.png)
+
+## Connection to Rstudio Server
+
