@@ -1,6 +1,6 @@
 # AWS_Rstudio_Server
 ## Architecture
-![](https://github.com/Jinn42/AWS_Rstudio_Server/blob/master/Architecture_diagram.png)
+<img width="150" height="150" src=“https://github.com/Jinn42/AWS_Rstudio_Server/blob/master/Architecture_diagram.png”/>
 ## Environment Setting
 -Create a VPC (CIDR: 10.0.0.0/16)
 
