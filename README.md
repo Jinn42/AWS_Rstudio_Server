@@ -9,9 +9,9 @@
 -Create an Internet Gateway and attach it to the VPC
 
 -Create and/or edit the Route Table
-![](https://github.com/Jinn42/AWS_Rstudio_Server/blob/master/Routetable.png)
 
--In the Public Subnet, launch an EC2 instance (e.g., Amazon Linux 2 AMI)
+![](https://github.com/Jinn42/AWS_Rstudio_Server/blob/master/Routetable.png)
+-In the Public Subnet, launch an EC2 instance (Amazon Linux 2 AMI)
 
 -Allocate a new Elastic IP address and associate it to the EC2 instance
 
